@@ -1,6 +1,6 @@
 # pick-duplicate-file
 
-Pick out duplicate files to another folder, to process Apple photos
+Pick out duplicate files to another folder, for process Apple photos
 
 go build
 
