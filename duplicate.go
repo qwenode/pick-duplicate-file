@@ -24,6 +24,9 @@ func main() {
 	if !file.Exist(toDir) || !file.IsDirectory(toDir) {
 		log.Fatalln("backup directory does not exist")
 	}
+	if sourceDir == toDir {
+		log.Fatalln("source directory can't same as flat directory")
+	}
 	hashList := map[string]string{}
 	moved := 0
 	skipped := 0
